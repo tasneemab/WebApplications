@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    background-image: url("../img/pe.jpeg")
+}
+h1{
+    display: inline-block;
+    size: 10px;
+    margin-top: 1%;
+    text-align: center;
+}
+#navbarCustom{
+    margin: 0px;
+    background-color: #fff2ef;
+    opacity: 0.8;
+    text-width: bold;
+
+
+}
+nav img{
+    height: 35px;
+    width: 90px;
+    margin-right: 3%;
+    margin-bottom: fill;
+
+}
+#title{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+.navbar-collapse.collapse.in {
+    display: block!important;
+}
+#Course, #Stud2{
+    background-color: rgba(255, 224, 208, 0.5);
+    overflow:auto;
+}
+#Stud1{
+    background-color: rgba(204, 224, 230, 0.5);
+    overflow: visible;
+}
+#Course{
+    padding-bottom: 40px;
+}

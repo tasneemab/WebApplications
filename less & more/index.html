@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/script1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Landing Page</title>
+</head>
+
+
+<body>
+<nav class="navbar navbar-expand-md bg-ligh navbar-light" id="navbarCustom">
+    <a class="navbar-brand" href="#">
+        <img src="img/logo%20hadassah.png" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://mowgli.hac.ac.il/course/view.php?id=12103" target="_blank">Course Website</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<h1 class="container-fluid">First Assigment</h1>
+<div class="container-fluid">
+    <div class="row" style="max-height: 700px">
+        <div class="col-xs-4 col-md-4" id="Course" style="text-align: center;">
+            <img src="img/computer.jpg"  class ="thumbnail img-responsive" style="height:49%; width:49%;" alt=" ">
+            <br><br>
+            <div><strong>Course Name:</strong> Internet Development</div>
+            <strong>Course Website:</strong><a class="nav-link" href="https://mowgli.hac.ac.il/course/view.php?id=12103" target="_blank" style="display: inline;">Click me</a>
+            <div><strong>Lecturer:</strong>Solange</div>
+            <div id="c1" class="containerTab" style="display:none;">
+                <br><br>
+                <h4>Contact Information:</h4><hr>
+                <div style="display: inline-block;"><i style="font-size:40px" class="fa">&#xf1a0;</i> <a href="mailto:solange@hac.ac.il">solange@hac.ac.il</a></div><br><br>
+                <div style="display: inline-block;"><i style="font-size:40px" class="fa">&#xf095;</i> <a href="tel:02-6295923">02-6295923 </a></div><br><br>
+                <table class="table table-striped w-300px responsive-table">
+
+                    <thead>
+                    <tr class="table-warning">
+                        <th>Data</th>
+                        <th>Info</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td><b>Class Location:</b></td>
+                        <td>Hadassah College, room 2104</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td><b>Class Time:</b></td>
+                        <td>08:00</td>
+                    </tr>
+                    <tr>
+                        <td><b>Class Day:</b></td>
+                        <td>Wednesday</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br><br>
+                <button type="button" class="btn btn-warning" onclick="showLess('c1','Course','more1');" id="less1">See Less</button>
+            </div>
+
+            <button type="button" class="btn btn-warning" onclick="showMore('c1','Course','more1');" id="more1" style="margin-top: 3%;">See More</button>
+
+        </div>
+        <div class="col-xs-4 col-md-4" id="Stud1"  style="text-align: center;">
+            <img src="img/Tasneem.jpg" class="img-responsive thumbnail" style="height:49%; width: 49%;" alt=" ">
+            <br><br>
+            <div><strong>Name: </strong>Tasneem Abu Odeh</div>
+            <div><strong>Email: </strong>tasnimab@edu.hac.ac.il</div>
+            <div><strong>ID: </strong>314902685</div>
+            <div id="c2" class="containerTab" style="display:none; ">
+                <br><br>
+                <h4>Links For Social Media:</h4><hr>
+                <div style="display: inline-block;"><i style="font-size:40px" class="fa">&#xf08c;</i> <a href="https://www.linkedin.com/in/tasneemabuodeh/"  target="_blank">LinkedIn Profile</a></div><br><br>
+                <div style="display: inline-block;"><i style="font-size:40px" class="fa">&#xf09b;</i> <a href="https://github.com/tasneemab/"  target="_blank"> Github Profile</a></div><br><br>
+                <table class="table table-striped w-300px responsive-table">
+
+                    <thead>
+                    <tr class="table-info">
+                        <th>#</th>
+                        <th>Course</th>
+                        <th>L. Name</th>
+                        <th>Grade</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Calculus 2</td>
+                        <td>Laure</td>
+                        <td>94</td>
+                    </tr>
+                    <tr class="table-info">
+                        <th scope="row">2</th>
+                        <td>Discrete Mathematics</td>
+                        <td>Eran London</td>
+                        <td>86</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Computer Architecture</td>
+                        <td>Martin Land</td>
+                        <td>93</td>
+                    </tr>
+                    </tbody>
+
+                </table>
+                <br><br>
+                <button type="button" class="btn btn-warning"  onclick="showLess('c2','Stud1','more2'); " id="less2">See Less</button>
+            </div>
+            <button type="button" class="btn btn-warning"  onclick="showMore('c2','Stud1','more2'); " id="more2" style="margin-top: 3%;">See More</button>
+
+        </div>
+        <div class="col-xs-4 col-md-4" id="Stud2"  style="text-align: center;">
+            <img src="img/Shahar.jpg"  class="img-responsive thumbnail" style="height:49%; width: 49%;" alt=" ">
+            <br><br>
+            <div><strong>Name: </strong>Shahar Aviv</div>
+            <div><strong>Email: </strong>shaharav@edu.hac.ac.il</div>
+            <div><strong>ID: </strong>336710840</div>
+            <div id="c3" class="containerTab" style="display:none; ">
+                <br><br>
+                <h4>Links For Social Media:</h4><hr>
+                <div style="display: inline-block;"><i style="font-size:40px" class="fa">&#xf08c;</i> <a href="https://www.linkedin.com/in/shaharaviv/"  target="_blank">LinkedIn Profile</a></div><br><br>
+                <div style="display: inline-block;"><i style="font-size:40px" class="fa">&#xf230;</i> <a href="https://www.facebook.com/shahar.aviv.7"  target="_blank">facebook Profile</a></div><br><br>
+                <table class="table table-striped w-300px responsive-table">
+                <thead>
+                <tr class="table-warning">
+                    <th>#</th>
+                    <th>Course</th>
+                    <th>L. Name</th>
+                    <th>Grade</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Calculus 1</td>
+                    <td>Laure</td>
+                    <td>94</td>
+                </tr>
+                <tr class="table-warning">
+                    <th scope="row">2</th>
+                    <td>Data Structure</td>
+                    <td>Eran London</td>
+                    <td>76</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Computer Networking</td>
+                    <td>Emael </td>
+                    <td>88</td>
+                </tr>
+                </tbody>
+                    </table>
+                    <br><br>
+                <button type="button" class="btn btn-warning" onclick="showLess('c3','Stud2','more3');" id="less3">See Less</button>
+                </div>
+            <button type="button" class="btn btn-warning" onclick="showMore('c3','Stud2','more3');" id="more3" style="margin-top: 3%;">See More</button>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

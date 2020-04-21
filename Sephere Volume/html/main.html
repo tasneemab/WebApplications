@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sphere Volume</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+
+
+</head>
+<body class="text-center conatiner-fulid">
+    <div class="jumbotron jumbotron-fulid">
+       <h1 id="title"><span>Sphere</span> Volume Calculator</h1> 
+    </div>   
+    <div id="subtitle">Enter the raduis of the sphere you want to get its valume</div>
+    <hr> 
+    <form onsubmit="return false;">
+            <div id = "form_id" class="col-md-12 col-xs-6">
+                    <input type="text" class="form-control" placeholder="Enter the raduis you want..." id="raduis" style="display: inline-block; width:50%;"/>
+                    <button type="submit" class="btn btn-warning" id="calculate"><b>Calculate</b></button>
+            </div>
+            <button type="submit" class="btn btn-dark" id="clear">Clear all the old Spheres</button>
+            <button type="submit" class="btn btn-dark" id="autoDraw">Draw the possible circles</button>
+    </form>
+    <label class="d-inline-flex p-2">The volume of the wanted sphere is :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="volume"></span></label>
+    <br><br>
+    <canvas id="canvas" width="400" height="400"></canvas>
+</body>
+<script src='../js/main.js'></script>
+
+</html>
