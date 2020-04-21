@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <title>TODO-Notes</title>
+</head>
+<body class="text-center container-fluid">
+<div class="jumbotron jumbotron-fluid">
+    <img id="title_img" src="../img/title.png" alt="">
+</div>
+<div class="container" id="board" rows="5">
+    <div class="form">
+        <input  id="newNote" class="md-textarea form-control" rows="5" cols="10">
+    </div>
+        <div class="col-10 form-group row" id="dateSection">
+            <input class="form-control" type="datetime-local" max="" id="date">
+        </div>
+</div>
+<button class="btn btn-secondary" type="button" id="add">Add New Task</button>
+<button class="btn btn-danger" type="button" id="delete">Delete Existing Task</button>
+<br><br>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <title>TO-DO</title>
+</head>
+
+<body class="text-center container-fluid">
+
+<header>
+    <img id="title_img" src="../img/title.png" alt="">
+</header>
+
+<form onsubmit="return false;">
+    <div id = "form_id">
+        <div id="board">
+        <input autofocus class="form-control"placeholder="Enter a New Task" id="task"/>
+            <input type="date" class="form-control" id="date" name="trip-start"  min="2019-12-25" max="2222-12-31">
+        <input  type="time" class="form-control" id="time">
+        </div>
+    </div>
+    <input type="submit" class="btn btn-success" id="add" value="Add This Task">
+    <button type="submit" class="btn btn-warning" id="show">Show Deleted Tasks</button>
+    <button type="submit" class="btn btn-danger"  id="clear">Clear Local Storage</button>
+    <button type="submit" class="btn btn-primary"  id="clearr">Clear Inputs</button>
+
+</form>
+<div id="error" class="alert alert-danger alert-dismissible" role="alert" >
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+<div class="row text-center justify-content-center" hidden id='space_warning'>
+    <div class="col-7 alert alert-danger" role="alert">
+        Enter a full task with a date!
+    </div>
+</div>
+<div class="row text-center justify-content-center" hidden id='existing_warning'>
+    <div class="col-7 alert alert-warning" role="alert">
+        to-do task already exsists!
+    </div>
+</div>
+<div class="tasks-list row">
+    <ul id="todoList" class="list-group col">
+    </ul>
+</div>
+
+<footer>&copy; Copyright 2019 TASSII</footer>
+
+
+<script src="../js/script.js"></script>
+</body>
+
+</html>
