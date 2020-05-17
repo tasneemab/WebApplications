@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <title>Ex2</title>
+</head>
+
+<body class="text-center container-fluid">
+
+<div class="jumbotron jumbotron-fluid">
+        <h1><span>TASKS <span>TO-DO</span></span></h1>
+        <b>Enter a new task into the input field in order to add it to your list</b><br>
+        <span>Click the "&#10008;" to mark the task as completed</span>
+</div>
+<h3 id = "task_text_title_id">Enter a New Task</h3>
+
+<form onsubmit="return false;">
+    <div id = "form_id" class="col-md-12 col-xs-6">
+        <input type="text" class="form-control" placeholder="Enter a New Task" id="task" style="display: inline-block; width:50%;"/>
+        <input type="submit" class="btn btn-secondary" id="add" value="Add This Task">
+    </div>
+    <button type="submit" class="btn btn-dark" onclick="ShowCompleted()" id="show">Show Completed Tasks</button>
+</form>
+<div id="error" class="alert alert-danger alert-dismissible" role="alert" >
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
+<div class="row text-center justify-content-center" hidden id='space_warning'>
+    <div class="col-7 alert alert-danger" role="alert">
+        a non-empty to-do task!
+    </div>
+</div>
+<div class="row text-center justify-content-center" hidden id='exsisting_warning'>
+    <div class="col-7 alert alert-danger" role="alert">
+        to-do task already exsists!
+    </div>
+</div>
+<div class="row tasks-list">
+    <ul id="todoList" class="list-group col-8 offset-0 col-sm-8 offset-sm-2">
+    </ul>
+</div>
+
+<footer>&copy; Copyright 2019 T&J</footer>
+
+
+<script src="../js/script.js"></script>
+</body>
+
+</html>
